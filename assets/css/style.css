@@ -10,3 +10,46 @@ textarea,
 button {
     font: inherit;
 }
+:root {
+    --header-bg: #10375c;
+    --primary-color: #2e80ce;
+    --heading-color: #10375c;
+}
+/* ==============commom================ */
+.container {
+    width: 1170px;
+    max-width: calc(100% -50px);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+
+/* =============Header===================== */
+.header {
+    min-height: 100hv;
+    background: var(--header-bg);
+}
+
+.header-top {
+    padding-top: 30px;
+    padding-bottom: 8px;
+    display: flex;
+    align-content: center;
+}
+.header__nav {
+    margin-left: 318px;
+}
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+}
+.nav__menu .nav--a {
+    color: #c9d2da;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.75;
+}
