@@ -25,12 +25,12 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     opacity: 80%;
 }
 /* =============Header===================== */
 .header {
-    min-height: 100hv;
+    min-height: 100vh;
     background: var(--header-bg);
 }
 
@@ -42,6 +42,46 @@ a:hover{
     position: sticky;
     top: -8px;
 }
+/* ============> make part logo <============ */
+.logo {
+    font-size: 1rem;
+    display: inline-flex;
+    position: relative;
+}
+.logo__circle::after,
+.logo__circle::before {
+    content: "";
+    border-radius: 50%;
+    display: inline-block;
+}
+.logo__circle::before {
+    background: #2e80ce;
+    width: 3em;
+    height: 3em;
+}
+.logo__circle::after {
+    width: 1.6em;
+    height: 1.6em;
+    background: #ffffff;
+    position: absolute;
+    top: 1.1em;
+    left: 1.1em;
+}
+.logo__brand {
+    margin-left: 6px;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: right;
+    display: block;
+}
+.logo__brand--small {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+/* ============> make part header- nav<============ */
 .header__nav {
     margin-left: 318px;
 }
@@ -50,6 +90,7 @@ a:hover{
     align-items: center;
     gap: 37px;
 }
+
 .nav__menu .nav--a {
     color: #c9d2da;
     text-align: center;
@@ -58,51 +99,50 @@ a:hover{
     font-weight: 300;
     line-height: 1.75;
     padding: 5px 5px;
-
 }
-..nav-active{
+.nav__menu .nav-active {
     display: flex;
     align-items: center;
+    gap: 8px;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+}
+
+.nav-active::before {
+    content: "";
+    border-radius: 50px;
     width: 6px;
     height: 6px;
-    border-radius: 50%;
-    background-color: #FFF;
-}
-.nav-active::before{
-    content: "";
-
+    background-color: #fff;
 }
 
-.header__btn{
+.header__btn {
     margin-left: 212px;
     display: flex;
     align-items: center;
-    gap: 18px ;
-
+    gap: 18px;
 }
-.btn--login{
-    color: #C9D2DA;
-text-align: right;
-font-size: 1.6rem;
-font-weight: 300;
-line-height: 1.75;
-padding: 0px 5px;
-width: 59px;
-
+.btn--login {
+    color: #c9d2da;
+    text-align: right;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+    padding: 0px 5px;
+    width: 59px;
 }
-.btn-sign-up{
-    color: #FFF;
-text-align: center;
-font-size: 1.6rem;
-font-weight: 400;
-line-height: 28px ; 
-display: block;
-width: 104px;
-border-radius: 22px;
-padding: 8px 19px;
-background-color: #2E80CE;
-
-
+.btn-sign-up {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+    display: block;
+    width: 104px;
+    border-radius: 22px;
+    padding: 8px 19px;
+    background-color: #2e80ce;
 }
 
 /* =============Header===================== */
