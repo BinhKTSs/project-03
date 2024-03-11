@@ -27,6 +27,7 @@ a {
 
 a:hover {
     opacity: 80%;
+    cursor: pointer;
 }
 .heading {
     font-weight: 600;
@@ -40,10 +41,12 @@ a:hover {
     line-height: calc(30 / 18);
 }
 .btn {
+    --height: 60px;
     border-radius: 30px;
+    height: var(--height);
     background: var(--primary-color);
-    width: 205px;
-    line-height: 60px;
+    min-width: 205px;
+    line-height: var(--height);
     display: block;
     color: #fff;
     text-align: center;
@@ -51,7 +54,7 @@ a:hover {
 }
 /* =============Header===================== */
 .header {
-    min-height: 100vh;
+    min-height: 200vh;
     background: var(--header-bg);
 }
 
@@ -62,7 +65,7 @@ a:hover {
     align-items: center;
     position: sticky;
     top: -30px;
-    z-index: 1;
+    z-index: 10;
     background-color: var(--header-bg);
 }
 /* ============> make part logo <============ */
@@ -129,7 +132,8 @@ a:hover {
     gap: 8px;
     color: #fff;
     text-align: center;
-    font-weight: 400;
+    /* font-weight: 400; */
+    text-shadow: 1px 0 0 currentColor;
 }
 
 .nav-active::before {
@@ -156,7 +160,7 @@ a:hover {
     width: 59px;
 }
 .btn-sign-up {
-    color: #fff;
+    /* color: #fff;
     text-align: center;
     font-size: 1.6rem;
     font-weight: 400;
@@ -165,7 +169,10 @@ a:hover {
     width: 104px;
     border-radius: 22px;
     padding: 8px 19px;
-    background-color: #2e80ce;
+    background-color: #2e80ce; */
+    --height: 44px;
+    min-width: 104px;
+    font-size: 1.6rem;
 }
 
 /* =============Header===================== */
@@ -175,9 +182,10 @@ a:hover {
     margin-top: 68px;
     display: flex;
     align-items: center;
+    gap: 113px;
 }
 .content-hero {
-    width: calc((517 / 1170) * 100%);
+    /* width: calc((517 / 1170) * 100%); */
     padding-bottom: 110px;
 }
 .hero__title {
