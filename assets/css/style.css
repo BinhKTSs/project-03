@@ -346,4 +346,64 @@ a:hover {
 }
 .our-service__btn {
     margin-top: 55px;
+    font-size: 1.8rem;
+}
+
+/* ===========How-it-work*/
+.how-it-work {
+    background-color: #f6fbff;
+}
+.list-how-it-work {
+    padding: 100px 0px;
+}
+
+.top-how-it-work__desc {
+    margin-top: 18px;
+    width: 40%;
+}
+
+.list-how-it-work {
+    padding-top: 70px;
+    display: flex;
+    flex-grow: 1;
+    gap: 30px;
+    overflow: auto;
+}
+.how-it-work-item {
+    width: 370px;
+    flex-shrink: 0;
+    border: 16px solid #eaf6ff;
+    border-radius: 4px;
+    padding: 43px 42px;
+    margin-top: 16px;
+}
+.how-it-work-item:hover {
+    margin-top: 0px;
+    transition: 0.3s;
+}
+.how-it-work-item__heading {
+    color: var(--header-bg);
+    margin-top: 18px;
+    font-size: 2.6rem;
+    line-height: calc(36 / 26);
+}
+.how-it-work-item__desc {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.how-it-work__link {
+    margin-top: 18px;
+    display: block;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+.how-it-work-item:hover .how-it-work__link {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
 }
