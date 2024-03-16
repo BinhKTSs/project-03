@@ -33,6 +33,19 @@ a:hover {
     font-weight: 600;
     color: var(--heading-color);
 }
+.section-heading {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -1px;
+}
+.section-desc {
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: calc(30 / 18);
+}
 .h2 {
     color: var(--header-bg);
     font-family: Sora;
@@ -365,9 +378,10 @@ a:hover {
 
 .list-how-it-work {
     padding-top: 70px;
-    display: flex;
-    flex-grow: 1;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 30px;
     overflow: auto;
 }
 .how-it-work-item {
@@ -421,7 +435,7 @@ a:hover {
     width: calc((570 / 1170) * 100%);
 
     position: relative;
-    height: 491px;
+    padding-bottom: 121px;
     flex-shrink: 0;
 }
 .feature__image--big {
@@ -430,7 +444,7 @@ a:hover {
     object-fit: cover;
     border-radius: 6px;
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
-    position: absolute;
+
     top: 0px;
     left: 0px;
 }
@@ -462,4 +476,50 @@ a:hover {
     font-weight: 400;
     line-height: calc(30 / 18);
     line-height: var(--height);
+}
+
+/* ===========make-part-member*/
+.top-member {
+    text-align: center;
+}
+.top-member__btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: calc(30 / 18);
+    line-height: var(--height);
+    margin: 53px 0px 70px;
+}
+.list-dentist {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(270px, 1fr));
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    overflow: hidden;
+}
+
+.dentist-item__avatar {
+    width: 270px;
+    height: 318px;
+    object-fit: cover;
+    padding-top: 28px;
+    background-color: #eaf6ff;
+    border-radius: 6px;
+}
+.dentist-item__name {
+    color: var(--header-bg);
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    display: block;
+    margin-top: 12px;
+}
+.dentist-item__desc {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85714;
 }
