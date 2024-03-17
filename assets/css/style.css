@@ -501,7 +501,7 @@ a:hover {
 
 .dentist-item__avatar {
     /* width: 270px; Không cần đặt width vì như vậy mai kia khó làm responsive */
-    height: 318px;
+    /* height: 318px; */
     object-fit: cover;
     padding-top: 28px;
     background-color: #eaf6ff;
@@ -512,6 +512,10 @@ a:hover {
     max-width: 100%;
     object-fit: cover;
     display: block;
+    transition: 0.7s;
+}
+.dentist-item:hover .dentist-item__avatar--img {
+    transform: scale(1.2);
 }
 .dentist-item__name {
     color: var(--header-bg);
