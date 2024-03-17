@@ -493,19 +493,25 @@ a:hover {
 }
 .list-dentist {
     display: grid;
-    grid-template-columns: repeat(4, minmax(270px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     column-gap: 30px;
     overflow: hidden;
 }
 
 .dentist-item__avatar {
-    width: 270px;
+    /* width: 270px; Không cần đặt width vì như vậy mai kia khó làm responsive */
     height: 318px;
     object-fit: cover;
     padding-top: 28px;
     background-color: #eaf6ff;
     border-radius: 6px;
+    overflow: hidden;
+}
+.dentist-item__avatar--img {
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
 }
 .dentist-item__name {
     color: var(--header-bg);
@@ -522,4 +528,27 @@ a:hover {
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.85714;
+}
+
+.member-inner-btn {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.member-inner-btn__arrow {
+    width: 36px;
+    height: 36px;
+    color: #575f66;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: 0.23s;
+}
+.member-inner-btn__arrow:hover {
+    border: none;
+    color: #fff;
+    background: var(--primary-color);
+    cursor: pointer;
 }
