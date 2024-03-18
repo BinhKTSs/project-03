@@ -556,3 +556,39 @@ a:hover {
     background: var(--primary-color);
     cursor: pointer;
 }
+
+/* ===========make-part-install-apps*/
+
+.install-app-inner {
+    margin-top: 265px;
+    border-radius: 4px;
+    background: #2e80ce;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+}
+
+.install-app__image {
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+    margin-top: -95px;
+    display: block;
+}
+
+.install-body__heading {
+    color: #fff;
+    max-width: 498px;
+}
+.install-body__desc {
+    max-width: 586px;
+    color: #fff;
+    margin-top: 18px;
+}
+.install-app-cta {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 28px;
+    align-items: center;
+}
