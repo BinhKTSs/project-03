@@ -534,14 +534,16 @@ a:hover {
     line-height: 1.85714;
 }
 
-.member-inner-btn {
+.member-inner-btn,
+.cta-read-news-btn {
     margin-top: 38px;
     display: flex;
     justify-content: center;
     gap: 18px;
 }
 
-.member-inner-btn__arrow {
+.member-inner-btn__arrow,
+.cta-read-news-btn__arrow {
     width: 36px;
     height: 36px;
     color: #575f66;
@@ -549,8 +551,10 @@ a:hover {
     border-radius: 50%;
     background: #ffffff;
     transition: 0.23s;
+    padding: 0px;
 }
-.member-inner-btn__arrow:hover {
+.member-inner-btn__arrow:hover,
+.cta-read-news-btn__arrow:hover {
     border: none;
     color: #fff;
     background: var(--primary-color);
@@ -591,4 +595,92 @@ a:hover {
     display: flex;
     column-gap: 28px;
     align-items: center;
+}
+
+/* ===========make-part-install-apps*/
+.news {
+    margin-top: 85px;
+    padding: 87px 0px;
+}
+.news-inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    align-items: center;
+}
+.cta-read-news {
+    max-width: 470px;
+    flex-shrink: 0;
+}
+.cta-read-news__link {
+    margin: 28px 0px;
+    display: block;
+    color: #10375c;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(28 / 18);
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+}
+.cta-read-news-btn {
+    justify-content: flex-start;
+    margin-top: 28px;
+}
+.cta-read-news-btn__arrow-right {
+    rotate: 180deg;
+}
+
+.list-new {
+    display: flex;
+
+    column-gap: 30px;
+}
+.new-item {
+    max-width: 270px;
+    border-radius: 12px;
+    border: 1px solid #e8ebee;
+    background: #fff;
+    overflow: hidden;
+}
+.new-item__thumb {
+    display: block;
+    max-width: calc(100% + 2px);
+    margin: -1px;
+}
+
+.new-item-body {
+    padding: 18px 22px 21px;
+}
+
+.new-item__heading {
+    color: var(--header-bg);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: calc(26 / 16);
+}
+.new-item__desc {
+    margin-top: 12px;
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: calc(24 / 14);
+}
+.new-item__cta {
+    display: block;
+    margin-top: 12px;
+    color: var(--header-bg);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.new-item:hover {
+    position: relative;
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+    transform: scale(1.05);
+    transition: 0.25s;
+    border-color: transparent;
+}
+.new-item:hover .new-item__cta {
+    color: var(--primary-color);
 }
