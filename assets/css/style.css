@@ -24,7 +24,13 @@ button {
 a {
     text-decoration: none;
 }
-
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
 a:hover {
     opacity: 80%;
     cursor: pointer;
@@ -73,6 +79,9 @@ a:hover {
     color: #fff;
     text-align: center;
     font-weight: 400;
+}
+.btn:hover {
+    opacity: 0.8;
 }
 /* =============Header===================== */
 .header {
@@ -732,11 +741,13 @@ a:hover {
     background-color: var(--header-bg);
 
     margin-top: 85px;
-    padding: 100px 0px;
+    padding-top: 100px;
     font-family: "Open Sans", sans-serif;
 }
 .footer-row {
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
     column-gap: 78px;
     justify-content: space-between;
 }
@@ -758,8 +769,9 @@ a:hover {
     line-height: 1.75;
     margin-bottom: 20px;
 }
-.footer-sub-head {
-    margin-top: 28px;
+.footer-list,
+.footer-social {
+    margin-bottom: 28px;
 }
 .footer__link {
     display: block;
@@ -769,6 +781,11 @@ a:hover {
     font-weight: 400;
     line-height: calc(26 / 14);
     margin-top: 10px;
+    transition: 0.25s;
+    white-space: nowrap;
+}
+.footer__link:hover {
+    text-decoration: underline;
 }
 
 .footer-row-item {
@@ -805,6 +822,7 @@ a:hover {
     text-align: left;
 }
 .footer-form {
+    margin-top: 10px;
     display: flex;
     column-gap: 12px;
     align-items: center;
@@ -812,9 +830,40 @@ a:hover {
 .footer-form__input {
     border-radius: 4px;
     border: 1px solid #406181;
-    max-width: 212px;
+    min-width: 212px;
     height: 46px;
     flex-shrink: 0;
     color: #9ca8b1;
     background-color: transparent;
+    outline: none;
+    padding: 0px 10px;
+}
+.footer-form__input::placeholder {
+    color: #9ca8b1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: calc(26 / 14);
+}
+.foorter-submit {
+    --height: 46px;
+    display: block;
+    min-width: 180px;
+    border: none;
+    width: 108px;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.coppy-right {
+    border-top: 1px solid #406181;
+    padding: 28px 0px 42px;
+    text-align: center;
+    color: #aab3ba;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: calc(26 / 14);
 }
